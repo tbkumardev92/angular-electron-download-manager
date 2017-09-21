@@ -5,7 +5,7 @@ const { BrowserWindow } = electron;
 const request = require("request");
 
 const app = electron.app;
-let downloadFolder = app.getPath("downloads");
+let downloadFolder;
 let lastWindowCreated;
 
 let queue = [];
